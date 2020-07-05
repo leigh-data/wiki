@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+
+{% block title %}Wiki Home Page{% endblock  %}
+
+{% block content %}
+    <h3>All Entries</h3>
+    {% if entries %}
+        <ul>
+            {% for entry in entries %}
+                <li><a href="{% url 'encyclopedia:detail' entry %}">{{entry}}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no entries.</p>
+    {% endif %}
+{% endblock  %}
+

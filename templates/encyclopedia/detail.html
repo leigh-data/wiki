@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+{% load markdown %}
+{% load bleach_tags %}
+
+{% block title %}Wiki Home Page{% endblock  %}
+
+{% block content %}
+    <div>
+        {{ entry|markdown|bleach|safe }}
+    </div>
+    <div>
+        <a href="{% url 'encyclopedia:update' title %}" class="btn btn-primary">Update</a>
+    </div>
+{% endblock  %}

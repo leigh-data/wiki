@@ -1,0 +1,3 @@
+[run]
+include = pages/*, users/*,
+omit = *migrations*, *tests*

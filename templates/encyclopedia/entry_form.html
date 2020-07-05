@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Create Entry
+{% endblock %}
+
+{% block content %}
+    {% if create %}
+        <h1>Create Entry</h1>
+    {% else %}
+        <h1>Edit Entry</h1>
+    {% endif %}
+
+    {% if create %}
+        <form method="POST" action="{% url 'encyclopedia:create' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-primary">Create</button>
+    {% else %}
+        {% if errors %}
+            {{ errors }}
+        {% endif %}
+        <form method="POST" action="{% url 'encyclopedia:update' title %}">
+            {% csrf_token %}
+            <h3>{{ title }}</h3>
+            {{ form|crispy }}
+        <button class="btn btn-primary">Update</button>
+        </form>
+    {% endif %}
+        </form>
+{% endblock  %}
