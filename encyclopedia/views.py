@@ -90,7 +90,7 @@ class EntryUpdateView(View):
 
         else:
             errors = form.errors
-            form = UpdateEntryForm({'content': entry, 'title': title})
+            form = UpdateEntryForm({'content': entry})
             return render(request, 'encyclopedia/entry_form.html', {
                 'create': False,
                 'form': form,
