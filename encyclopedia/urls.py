@@ -9,6 +9,6 @@ urlpatterns = [
     path('search/', views.EntrySearchView.as_view(), name='search'),
     path('random/', views.RandomEntryView.as_view(), name='random'),
     path('create/', views.EntryCreateView.as_view(), name='create'),
-    path('<title>', views.EntryDetailView.as_view(), name='detail'),
+    path('wiki/<title>', views.EntryDetailView.as_view(), name='detail'),
     path('<title>/update/', views.EntryUpdateView.as_view(), name='update'),
 ]

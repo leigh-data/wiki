@@ -32,9 +32,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     # custom apps
-    'pages.apps.PagesConfig',
-    'users.apps.UsersConfig',
-    'encyclopedia.apps.EncyclopediaConfig'
+    'encyclopedia.apps.EncyclopediaConfig',
+    'users.apps.UsersConfig'
 ]
 
 SITE_ID = 1
