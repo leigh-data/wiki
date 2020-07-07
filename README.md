@@ -1,7 +1,9 @@
 # Wiki
 
 [Website](https://wiki.devgrue.com)
+
 [GitHub](https://github.com/leigh-data/wiki)
+
 [YouTube](https://youtu.be/T9cCAtJLDh4)
 
 ---
