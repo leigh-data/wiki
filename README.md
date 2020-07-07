@@ -2,7 +2,7 @@
 
 [Website](https://wiki.devgrue.com)
 [GitHub](https://github.com/leigh-data/wiki)
-[YouTube](https://youtube.com)
+[YouTube](https://youtu.be/T9cCAtJLDh4)
 
 ---
 
