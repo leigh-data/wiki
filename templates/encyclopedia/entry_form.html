@@ -2,14 +2,18 @@
 {% load crispy_forms_tags %}
 
 {% block title %}
-    Create Entry
+    {% if create %}
+        Create Entry
+    {% else %}
+        Update Entry
+    {% endif %}
 {% endblock %}
 
 {% block content %}
     {% if create %}
         <h1>Create Entry</h1>
     {% else %}
-        <h1>Edit Entry</h1>
+        <h1>Update Entry</h1>
     {% endif %}
 
     {% if create %}
