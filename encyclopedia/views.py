@@ -60,7 +60,7 @@ class EntryCreateView(View):
             title = form.cleaned_data.get('title')
             content = form.cleaned_data.get('content')
             util.save_entry(title, content)
-            return HttpResponseRedirect(reverse('encyclopedia:index'))
+            return HttpResponseRedirect(reverse('encyclopedia:detail', kwargs={'title': title}))
         else:
             form = CreateEntryForm(request.POST)
             return render(request, 'encyclopedia/entry_form.html', {
@@ -86,7 +86,7 @@ class EntryUpdateView(View):
         if form.is_valid():
             content = form.cleaned_data.get('content')
             util.save_entry(title, content)
-            return HttpResponseRedirect(reverse('encyclopedia:index'))
+            return HttpResponseRedirect(reverse('encyclopedia:detail', kwargs={'title': title}))
 
         else:
             errors = form.errors

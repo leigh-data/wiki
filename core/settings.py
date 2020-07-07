@@ -133,7 +133,7 @@ STATICFILES_FINDERS = [
 BLEACH_DEFAULT_WIDGET = 'django.forms.widgets.TextInput'
 BLEACH_ALLOWED_TAGS = ['h1', 'h2', 'h3',
                        'h4', 'h5', 'h6', 'p', 'b', 'i', 'u', 'em', 'strong', 'a',
-                       'ul', 'li', 'ol']
+                       'ul', 'li', 'ol', 'code']
 BLEACH_ALLOWED_ATTRIBUTES = ['href']
 
 # Auth settings
