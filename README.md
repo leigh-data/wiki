@@ -55,3 +55,65 @@ File that creates, updates, and retrieves (individual and all) entries.
 ## views.py
 
 File that contains all of the views for the encyclopedia application. All views inherit from the **views.View** class. The views are: EntryIndexView, EntryDetailView, RandomEntryView, EntryCreateView, and EntryUpdateView
+
+## entries/
+
+Directory where the encyclopedia entries are stored.
+
+## scss/
+
+Directory where **scss** files are held. Contains **\_main.scss**, **style.scss**, and **font-awesome**, a directory for FontAwesome icons.
+
+## static/
+
+Directory for static assets. Contains the folder **scss/**, which holds the **style.css** file.
+
+## templates
+
+The template folder.
+
+### \_base.html
+
+The layout template.
+
+### 404.html
+
+The template that is displayed when an entry is not found.
+
+### 500.html
+
+The template that is displayed when there is a server error.
+
+### encyclopedia/
+
+#### detail.html
+
+The template that shows the detail for an entry.
+
+#### search.html
+
+The template that shows the search results, if there are multiple results.
+
+#### index.html
+
+The template that shows all of the encyclopedia entries.
+
+#### entry_form.html
+
+Template that is rendered when an entry is edited or created.
+
+## .gitignore
+
+Items ingnored by git.
+
+## manage.py
+
+Script used to run Django tasks.
+
+## package.json
+
+An npm file. Used to install **node-scss** and **bootstrap**. Also contains a script to run the **scss** compiler (`npm run scss`)
+
+## requirements.txt
+
+File containing all of the python packages needed for the application.
